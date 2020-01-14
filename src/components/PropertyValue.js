@@ -22,6 +22,7 @@ class PropertyValue extends React.Component {
 					color="secondary"
 					value={store.propertyValue.text}
 					onChange={(e)=>{
+						console.log(e.target.value)
 						store.propertyValue.text = e.target.value;
 						this.forceUpdate();
 					}}
@@ -125,7 +126,7 @@ const styles = theme => {return {
 		fontFamily:'Lato'
 	},
 	fontStyle:{
-		fontSize: '1.3125rem',
+		fontSize: 11,
 		fontWeight: 500,
 		fontFamily: 'Lato',
 		lineHeight: '1.16667em',

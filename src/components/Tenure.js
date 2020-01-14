@@ -31,22 +31,6 @@ class Tenure extends React.Component {
 					multiline={false}
 				/>
 				
-				<TextField
-					label={<Typography variant="subtitle2" component="span" style={{color:"#999",fontSize: 13}}>Start after (months)</Typography>}
-					classes={{root:classes.fontStyle}}
-					placeholder="Start after (months)"
-					color="secondary"
-					value={store.tenure.startAfter}
-					onChange={(e)=>{
-						store.tenure.startAfter = e.target.value;
-						this.forceUpdate();
-					}}
-					margin="normal"
-					fullWidth
-					variant="filled"
-					multiline={false}
-				/>
-				
 				<Typography component="div" style={{fontSize:12,marginTop:20}}>Tenure Is</Typography>
 				<span style={{marginBottom:20}}>
 					<FormControlLabel
@@ -141,7 +125,7 @@ const styles = theme => {return {
 		fontFamily:'Lato'
 	},
 	fontStyle:{
-		fontSize: '1.3125rem',
+		fontSize: 10,
 		fontWeight: 500,
 		fontFamily: 'Lato',
 		lineHeight: '1.16667em',
